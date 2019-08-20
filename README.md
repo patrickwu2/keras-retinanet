@@ -16,6 +16,13 @@ by Tsung-Yi Lin, Priya Goyal, Ross Girshick, Kaiming He and Piotr Dollár.
 
 ## Testing
 An example of testing the network can be seen in [this Notebook](https://github.com/delftrobotics/keras-retinanet/blob/master/examples/ResNet50RetinaNet.ipynb).
+
+Also, you can use the script we provided if you use csv dataset:
+
+```bash
+python3 keras_retinanet/bin/inference.py --args
+```
+
 In general, inference of the network works as follows:
 ```python
 boxes, scores, labels = model.predict_on_batch(inputs)
